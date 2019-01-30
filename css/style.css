@@ -1,0 +1,1068 @@
+/* ----- Global ----- */
+
+body 
+{
+  margin: 0;
+  background: #ededed;
+  color: #444444;
+  font-family: "Avenir LT W01 45 Book", "Helvetica Neue", Helvetica, sans-serif;
+}
+
+article, 
+aside, 
+details, 
+figcaption, 
+figure, 
+footer, 
+hgroup, 
+nav,
+section, 
+summary 
+{
+  display: block;
+}
+
+html 
+{
+  font-family: sans-serif;
+  
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -o-text-size-adjust: 100%;  
+}
+
+a 
+{
+  text-decoration: none;
+}
+
+a:focus 
+{
+  outline: thin dotted;
+}
+
+a:active, a:hover {
+  outline: 0;
+}
+
+a, a:visited, a:hover, a:link 
+{
+  color: #5c8198;
+}
+
+ul, ol, dl, dt, dd 
+{
+  margin: 0;
+  padding: 0;
+}
+
+li 
+{
+  list-style-type: none;
+  display: list-item;
+  text-align: -webkit-match-parent;
+  text-align: -ms-match-parent;
+  text-align: -moz-match-parent;
+  text-align: -o-match-parent;
+  text-align: match-parent;
+}
+
+img 
+{
+  display: block;
+  border: 0;
+}
+
+h1, h2, h3, h4, h5, h6 
+{
+  font-family: "Avenir LT W01 45 Book", "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: normal;
+  margin: 0;
+}
+
+p,
+article 
+{
+  font-family: "Merriweather", Georgia, Times, serif;
+  line-height: 2;
+  margin: 0 0 0.5em;
+}
+
+b,
+strong 
+{
+  font-weight: bold;
+}
+
+hr 
+{
+  border: 0;
+  height: 1px;
+}
+
+/* ----- Media ----- */
+
+#responsive
+{
+	opacity:0;
+	height:0px;
+	width: 0px;    	
+}
+
+#responsive img
+{
+	opacity:0;
+	height:0px; 	
+}
+
+@media all and ( max-width: 1230px ){
+
+	#header nav{
+		z-index: 1000;
+	}
+
+    .top-bar nav ul li 
+    {
+      text-transform: uppercase;
+      width: 100%;
+    }
+
+    .top-bar nav ul li a 
+    {
+      display: block;
+      line-height: 2em;
+      text-align: center;
+      padding: 10px 10px;
+      font-size: 14px;
+    }
+
+    .top-bar nav ul li a span 
+    {
+      padding: 0 4px 10px;
+      font-weight: bold;
+    }
+
+    .top-bar nav ul li a:hover span 
+    {
+      border-bottom: 2px solid #b7d9de;
+    }
+	
+    body #header{
+    	position: fixed;
+    	height: 100px;
+    	background-color: #ededed;
+    	border-bottom: 1px solid #e6e6e6;
+    	overflow: hidden;
+    	-webkit-transition: height 1s;
+    }
+    body .logo{
+    	padding:32px 18px;
+    }
+
+    div .home{
+    	height:100px;
+    }
+    
+    #responsive{
+    	float:right;
+    	width: 12%;
+    	height: 100px;
+    	opacity:1;
+    }
+    
+    #responsive img{
+    	height:100%;
+    	opacity: 1;
+    }
+    
+    #header:hover {
+    	height:300px;
+    }
+
+}
+
+/* ----- Fim Media ----- */
+
+/* ----- FORM ----- */
+
+label 
+{
+  color: #444444;
+  font-size: 16px;
+  font-weight: bold;
+  padding-left: 7px;
+}
+
+input {
+  border: 0;
+  padding: 10px;
+  font-size: 11pt;
+  font-family: Arial, sans-serif;
+  color: #444444;
+  border: solid 1px #00cae9;
+
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+
+  -webkit-transition: box-shadow 0.1s;
+  -moz-transition: box-shadow 0.1s;
+  -ms-transition: box-shadow 0.1s;
+  -o-transition: box-shadow 0.1s;
+  transition: box-shadow 0.1s;
+}
+
+input:focus { 
+  border:solid 1px #00cae9;
+  box-shadow: 0px 0px 5px 0.5px #00cae9;
+}
+
+select {
+  border: 0;
+  padding: 10px;
+  font-size: 11pt;
+  font-family: Arial, sans-serif;
+  color: #444444;
+  border: solid 1px #00cae9;
+  width: 300px;
+
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+
+  -webkit-transition: box-shadow 0.1s;
+  -moz-transition: box-shadow 0.1s;
+  -ms-transition: box-shadow 0.1s;
+  -o-transition: box-shadow 0.1s;
+  transition: box-shadow 0.1s;
+}
+
+select:focus {
+  border:solid 1px #00cae9;; 
+  box-shadow: 0px 0px 5px 0.5px #00cae9;
+}
+
+textarea {
+  border: 0;
+  padding: 10px;
+  font-size: 11pt;
+  font-family: Arial, sans-serif;
+  color: #444444;
+  border: solid 1px #00cae9;
+
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+
+  -webkit-transition: box-shadow 0.1s;
+  -moz-transition: box-shadow 0.1s;
+  -ms-transition: box-shadow 0.1s;
+  -o-transition: box-shadow 0.1s;
+  transition: box-shadow 0.1s;
+}
+
+textarea:focus {
+  border:solid 1px #00cae9;; 
+  box-shadow: 0px 0px 5px 0.5px #00cae9;
+}
+
+/* ----- Fim Form ----- */
+
+/* ===== Alinhamento ao Centro ===== */
+
+.container 
+{
+  margin: 0 auto;
+  width: 75%;
+}
+
+/* ================================= */
+
+/* ---- Titulo ou Estilo ---- */
+
+.estilo 
+{
+  color: #57534b;
+  font-weight: bold;
+  letter-spacing: 6px;
+  text-shadow: 2px 2px 5px rgba(150, 150, 150, 1);
+}
+
+/* ----- Fim Titulo ----- */
+
+
+/* ===== Index Header ===== */
+
+
+/* ----- Grey Header ----- */
+
+#greyheader
+{
+  background: #e6e6e6;
+  margin-bottom: 50px;
+  padding: 220px 0 110px;
+  text-align: center;
+}
+
+#greyheader h1
+{
+  color: #57534b;
+  font-size: 48px;
+  letter-spacing: 8px;
+  text-shadow: 2px 2px 5px rgba(150, 150, 150, 1);
+}
+
+#greyheader span
+{
+  border-top: 4px solid #d6d6d6;
+  padding: 25px 0 0;
+}
+
+/* ----- Fim Grey Header ----- */
+
+/* ----- IMG Index ----- */
+
+#headerimg
+{
+  width: 100%;
+  height: auto;
+  top: 0;
+  z-index: -1;
+
+  -webkit-box-shadow: -5px 10px 55px 5px rgba(0,0,0,0.75);
+  -ms-box-shadow: -5px 10px 55px 5px rgba(0,0,0,0.75);
+  -moz-box-shadow: -5px 10px 55px 5px rgba(0,0,0,0.75);
+  -o-box-shadow: -5px 10px 55px 5px rgba(0,0,0,0.75);
+  box-shadow: -5px 10px 55px 5px rgba(0,0,0,0.75);
+}
+
+/* ----- Fim IMG Index ----- */
+
+/* ===== Header ===== */
+
+#header 
+{
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 165px;
+  z-index: 1000;
+}
+
+/* ----- Menu ----- */
+
+.top-bar 
+{
+  height: auto;  
+}
+
+.home
+{
+	position:absolute;
+	width:120px;
+	height:165px;
+	background: #00cae9;
+}
+
+.logo
+{
+	padding: 61px 18px;
+	width: 85px;
+	height: 43px;
+	top:0px;
+	left:0px;
+	
+	-webkit-transition: -webkit-transform 0.5s; 
+	-ms-transition: -ms-transform 0.5s; 
+	-moz-transition: -moz-transform 0.5s; 
+	-o-transition: -o-transform 0.5s; 
+	transition: transform 0.5s; 
+	
+}
+
+.logo:hover
+{
+	-webkit-transform: rotateZ(-5deg);
+	-ms-transform: rotateZ(-5deg);
+	-moz-transform: rotateZ(-5deg);
+	-o-transform: rotateZ(-5deg);
+	transform: rotateZ(-5deg);
+}
+
+.top-bar nav 
+{
+  background: transparent;
+  width: auto;
+  float: right;
+}
+
+.top-bar nav ul li 
+{
+  text-transform: uppercase;
+  float: left;
+  width: auto;
+  margin: 0 0 0 10px;
+}
+
+.top-bar nav ul li a 
+{
+  display: block;
+  line-height: 2em;
+  text-align: center;
+  padding: 78px 10px 71px;
+  font-size: 14px;
+}
+
+.top-bar nav ul li a span 
+{
+  border-bottom: 2px solid rgba(183, 217, 222, 0);
+  padding: 0 4px 10px;
+  font-weight: bold;
+    
+  -webkit-transition: border-bottom 0.3s; 
+	-ms-transition: border-bottom  0.3s; 
+	-moz-transition: border-bottom  0.3s; 
+	-o-transition: border-bottom  0.3s; 
+	transition: border-bottom  0.3s; 
+ }
+
+.top-bar nav ul li a:hover span 
+{
+  border-bottom: 2px solid #b7d9de;
+}
+/* ----- Fim Menu ----- */
+
+/* ===== Fim do Header ===== */
+
+
+/* ----- Espaçamento entre o Header e o Content ----- */
+
+.before
+{
+  height: 3px;
+  display: block;
+  width: 450px;
+  background: #d9d9d9;
+  margin: 75px auto 20px;
+}
+
+/* ===== Content ===== */
+
+#content 
+{
+  position: relative;
+  padding-left: 35px;
+  padding-right: 35px;
+  margin-bottom: 35px;
+  overflow: hidden;
+}
+
+#content > h1 
+{
+  text-align: center;
+  font-size: 22pt;
+  margin: 0 auto 70px;
+}
+
+#containerlogos 
+{
+  position: relative;
+  padding-left: 35px;
+  padding-right: 35px;
+  overflow: hidden;
+}
+
+#containerlogos > h1 
+{
+  text-align: center;
+  font-size: 22pt;
+  margin: 0 auto 70px;
+}
+
+/* ----- DIV REGISTO ----- */
+
+.registo 
+{
+  float: left;
+  background-color: #e6e6e6;
+  padding: 50px 60px;
+  width: 45%;
+}
+
+.form-centro
+{
+  margin: 0 auto;
+  width: 325px;
+}
+
+.form-centro > form > h4
+{
+  color: #444444;
+  font-size: 16px;
+  font-weight: bold;
+  padding-left: 7px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+/* ----- Packs DIV REGISTO ----- */
+
+#pacotes 
+{
+  margin: 10px 0px 10px -120px;
+  width: 550px;
+  
+  overflow: hidden;
+  -webkit-transition: height 0.5s;
+  -moz-transition: height 0.5s;
+  -ms-transition: height 0.5s;
+  -o-transition: height 0.5s;
+  transition: height 0.5s;
+  height:0px;
+}
+
+input[type=checkbox] 
+{
+   position: absolute;
+   opacity: 0;
+}
+
+/* ----- Toggle ----- */
+
+input[type=checkbox]:checked ~ #pacotes{
+   height: 290px;
+}
+
+#pacotes table 
+{
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#pacotes table tr
+{
+  text-align: center;
+}
+
+#pacotes table td
+{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px dotted #ccc;
+  border-right: 1px solid #00cae9;
+}
+
+#pacotes td:first-child 
+{
+  text-align: left;
+  font-size: 13px;
+}
+
+/* ----- FIM DIV REGISTO ----- */
+
+
+/* ----- PROVAS ------*/
+
+.provas
+{
+  padding-left: 10%;
+	overflow:hidden;
+}
+
+.provascoluna
+{
+  
+  width: 50%;
+  float: left;
+  text-align: justify;
+}
+
+.provas ul li
+{
+	padding-top: 5px;
+}
+
+.provas ul li img
+{
+	position: absolute;
+	padding-bottom:10px;
+}
+
+.provas ul li span
+{
+	margin-left:30px;
+	margin-top: 10px;
+}
+
+/* ----- FIM PROVAS ------*/
+
+/* ----- CUBS ----- */
+
+.cubs
+{
+  background-color: #e5e5e5;
+  width: 100%;
+  height: auto;
+}
+
+.cubs > h2
+{
+  font-family: "Merriweather", Georgia, Times, serif;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+/* ----- FIM CUBS ----- */
+
+/* ----- CLASSIFICAÇÕES ----- */
+
+.classificacoes
+{
+  background-color: #e5e5e5;
+  text-align: center;
+  width: 100%;
+  height: auto;
+  padding: 50px;
+}
+
+.classificacoes > h2
+{
+  text-align: left;
+  margin-left: 13%;
+  margin-bottom: 35px;
+}
+
+.classificacoes iframe {
+  width: 73%;
+  height: 700px;
+}
+
+/* ----- FIM CLASSIFICAÇÕES ----- */
+
+/* ----- ORGANIZAÇÃO ----- */
+
+.organizacao
+{
+  background-color: #e5e5e5;
+  width: 100%;
+  height: auto;
+}
+
+.organizacao > h2
+{
+  font-family: "Merriweather", Georgia, Times, serif;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+/* ----- FIM ORGANIZAÇÃO ----- */
+
+/* ----- CONTACTOS ----- */
+
+.contactos
+{
+  background-color: #e5e5e5;
+  overflow: hidden;
+}
+
+.contactos_form
+{
+  padding: 50px 60px;
+  margin-right: 100px;
+  width: 40%;
+  float: left;
+}
+
+.contactos_dados
+{
+  float: left;
+  padding-top: 85px;
+  margin-left: 70px;
+  height: auto;
+  width: 30%;
+}
+
+.contactos_dados li 
+{
+  padding-top: 20px;
+}
+
+.contactos_dados li img 
+{
+  position: absolute;
+}
+
+.contactos_dados li span 
+{
+  color: #3D3D3D;
+  font-size: 12px;
+  margin-left: 30px;
+}
+
+.contactos_maps
+{
+  margin-top: 30px;
+  border: 3px solid white;
+}
+
+.contactos_maps iframe {
+  width: 100%;
+  height: 500pt;
+  border: 0;
+}
+
+/* ----- FIM CONTACTOS ----- */
+
+/* ----- DIV NEWS ou da Direita ----- */
+
+.divnews 
+{
+  width: 50%;
+  float: left;
+  margin-right: 40px;
+}
+
+
+/* ----- DIV CARTAZ ou da Esquerda ----- */
+.divcartaz 
+{
+  float: left;
+  height: auto;
+  width: 45%;
+}
+
+.cartaz 
+{
+  margin: 40px auto 35px;
+}
+
+.divcartaz2 
+{
+  float: left;
+  height: auto;
+  width: 35%;
+  margin-top: 75px;
+  margin-left: 45px;
+}
+
+.cartaz2 {
+  width: 100%;
+  float: left;
+}
+
+/* ----- FIM DIV CARTAZ ou da Esquerda ----*/
+
+/* ----- FORMATAÇÕES DIV NEWS e DIV CARTAZ ----- */
+
+.divnews > h3
+{
+  font-family: "Merriweather", Georgia, Times, serif;
+  font-weight: bold;
+  text-align: center;
+}
+
+.divnews  > h4, .divcartaz > h4 
+{
+  font-family: "Merriweather", Georgia, Times, serif;
+  font-weight: bold;
+  text-align: left;
+  margin-top: 15px;
+}
+
+.divnews > article, .divcartaz > article, .cubs > article, .organizacao > article
+{
+  padding: 15px;
+  text-align: justify;
+}
+
+.divnews > p, .divcartaz > p, .cubs > p, .organizacao > p
+{
+  font-size: 14px;
+}
+
+.divnews > hr, .divcartaz > hr, .cubs > hr, .organizacao > hr
+{
+  background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+  background-image:    -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+  background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+  background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+}
+
+/* ----- FIM FORMATAÇÕES DIV NEWS e DIV CARTAZ ----- */
+
+/* ----- FIM DIV NEWS e DIV CARTAZ ----- */
+
+/* ----- APOIOS ----- */
+
+.divapoiosholder
+{
+  width: 18%;
+  float: left;
+  margin:0 10px;
+}
+
+.divapoios
+{
+  margin:10px 0;
+  border-radius: 10px 10px 10px 10px;
+  -webkit-transition: border 0.4s, background-color 0.4s; 
+  -ms-transition: border 0.4s, background-color 0.4s;
+  -moz-transition: border 0.4s, background-color 0.4s;
+  -o-transition: border 0.4s, background-color 0.4s;
+  transition: border 0.4s, background-color 0.4s;    
+}
+
+.divapoios img{
+	width: 100%;
+	max-width:100%;
+}
+
+.divapoios:hover
+{
+  border:1pt solid #3366FF;
+  background-color:white;
+}
+
+
+#containerlogos{margin-bottom:20pt}
+
+/* ----- FIM APOIOS ----- */
+
+
+/* ----- BANNER ----- */
+
+@-webkit-keyframes banner
+{
+  0%{
+    background-position: 0px;
+  } 
+  100%{
+    background-position: -4650px;
+  }
+}
+
+@-ms-keyframes banner
+{
+  0%{
+    background-position: 0px;
+  } 
+  100%{
+    background-position: -4650px;
+  }
+}
+
+@-moz-keyframes banner
+{
+  0%{
+    background-position: 0px;
+  } 
+  100%{
+    background-position: -4650px;
+  }
+}
+
+@-o-keyframes banner
+{
+  0%{
+    background-position: 0px;
+  } 
+  100%{
+    background-position: -4650px;
+  }
+}
+
+#bannersize 
+{
+  margin: 0 auto 35px;
+  width: 54%;
+  height: 150px;
+  border: #3366FF solid 3pt;
+}
+
+#bannerapoios
+{
+  width: 100%;
+  height: 100%;
+  -webkit-animation: banner 120s linear infinite;
+  -ms-animation: banner 120s linear infinite;
+  -moz-animation: banner 120s linear infinite;
+  -o-animation: banner 120s linear infinite;
+  background-image:url('../img/apoios/logobanner.png'); 
+}
+
+/* ----- FIM BANNER ----- */
+
+/* ===== FIM CONTENT ===== */
+
+
+/* ===== Footer ===== */
+
+#footer 
+{
+  margin: 0px auto;
+  width: 100%;
+}
+
+/* ----- MINI DIV ----- */
+
+.footer-top 
+{
+  height: 10px;
+  background-color: #898989;
+}
+
+/* ----- FIM MINI DIV ----- */
+
+.footer-center 
+{
+  background-color: #666666;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  overflow: hidden;
+}
+
+/* ----- DIV DO MEIO ----- */
+.footer-main-center 
+{
+  position: relative;
+  height: auto;
+}
+
+/* ----- FOOTER LEFT ----- */
+
+.footer-left 
+{
+  float: left;
+  width: 25%;
+  height: 100%;
+}
+
+.footer-left ul 
+{
+  padding-left: 50px;
+}
+
+
+.footer-left li 
+{
+  padding-top: 11px;
+}
+
+.footer-left li img 
+{
+  position: absolute;
+}
+
+.footer-left li span 
+{
+  color: #cbcbcb;
+  font-size: 12px;
+  margin-left: 30px;
+}
+
+/* ----- FIM FOOTER LEFT ----- */
+
+/* ----- DIV MIDDLE ----- */
+
+.footer-middle 
+{
+  position: absolute;
+  left: 28%;
+  width: 44%;
+  height: 100%;
+}
+
+.footer-middle article 
+{
+  margin-top: 10px;
+}
+
+.footer-middle p 
+{
+  font-family: "Avenir LT W01 45 Book", "Helvetica Neue", Helvetica, sans-serif;
+  text-align: justify;
+  color: #cbcbcb;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+/* ----- FIM DIV MIDDLE ----- */
+
+/* ----- DIV RIGHT ----- */
+
+.footer-right 
+{
+  float: right;
+  width: 25%;
+  height: 100%;
+}
+
+.footer-right h3, .footer-middle h3 
+{
+  border-bottom: 1px solid #CBCBCB;
+  color: #CBCBCB;
+  font-size: 18px;
+  margin-top: 14px;
+  padding-bottom: 8px;
+}
+
+.footer-right li 
+{
+  border-bottom: 1px solid #898989;
+  padding: 7px 0;
+}
+
+.footer-right li span 
+{
+  color: white;
+  font-size: 12px;
+
+}
+.footer-right li a
+{
+  padding: 10px 210px 10px 0px;
+}
+  
+.footer-right li a:hover span 
+{
+  border-bottom: 1px solid white;
+}
+/* ----- FIM DIV RIGHT ----- */
+
+/* ----- FIM DIV DO MEIO ----- */
+
+/* ----- COPYRIGHT ----- */
+
+.footer-bottom 
+{
+  background-color: #333333;
+}
+
+.footer-bottom address 
+{
+  margin: 0;
+  padding: 18px 0 13px 14px;
+  color: #ffffff;
+}
+
+.footer-logo 
+{
+  margin: 0 auto;
+  width: 85px;
+  height: 85px;
+}
+
+/* ----- FIM COPYRIGTH ----- */
+
+/* ===== FIM FOOTER ===== */

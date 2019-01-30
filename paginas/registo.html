@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>CUBS</title>
+		<meta name="description" content="Circuito Universitário de Bodyboard e Surf de Portugal">
+		<meta name="author" content="Alberto & André">
+		<link rel="icon" type="image/x-icon" href="../img/favicon.ico">
+		<link rel="stylesheet" href="../css/style.css"/>
+		<link rel="stylesheet" href="styles.css" media="screen and (max-width: 1230px)">
+	</head>
+
+	<body>
+		<header>
+
+			<div id="greyheader">
+				<h1><span>Inscrições</span></h1>
+			</div>
+
+			<div id="header">				
+				<div class="top-bar">
+					<div class="container">
+						<a href="../index.html">
+							<div class="home">
+								<img class="logo" src="../img/white.png" alt="Home" />
+							</div>
+						</a>
+
+						<div id="responsive"><img src="img/lines.png" alt="Menu"></div>
+						
+						<nav>
+							<ul>
+								<li><a href="cubs.html"><span>CUBS</span></a></li>
+								<li><a href="provas.html"><span>Provas</span></a></li>
+								<li><a href="classificacoes.html"><span>Classificações</span></a></li>
+								<li><a href="registo.html"><span>Inscrições</span></a></li>
+								<li><a href="organizacao.html"><span>Organização</span></a></li>
+						        <li><a href="apoios.html"><span>Apoios</span></a></li>
+						        <li><a href="contactos.html"><span>Contactos</span></a></li>
+						    </ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+
+		</header>
+		
+		<section>
+			<div id="content" class="container">
+
+				<div class="registo">
+					<div class="form-centro">
+						<form action="http://www.dei.estg.ipleiria.pt/ucs/daw1/formaction.php" method="post">
+
+							<!-- Nome Completo -->
+							<label for="idNomeComp">Nome Completo *</label><br>
+							<input type="text" id="idNomeComp" name="Nome_Comp" size="35" required>
+
+							<br><br>
+
+							<!-- Entidade de Ensino Superior -->
+							<label for="idEntidade">Entidade de Ensino Superior *</label><br>
+							<select id="idEntidade" name="Entidade" required>
+							<option value="">Escolha uma Entidade</option>
+								<optgroup label="Porto"> 
+									<option value="Escola Superior de Enfermagem do Porto">Escola Superior de Enfermagem do Porto</option> 
+									<option value="Instituto Politécnico do Porto - Instituto Superior de Engenharia do Porto">Instituto Politécnico do Porto - Instituto Superior de Engenharia do Porto</option> 
+								</optgroup> 
+								<optgroup label="Coimbra"> 
+									<option value="Escola Superior de Enfermagem de Coimbra">Escola Superior de Enfermagem de Coimbra</option> 
+									<option value="Instituto Politécnico de Coimbra - Escola Superior de Educação de Coimbra">Instituto Politécnico de Coimbra - Escola Superior de Educação de Coimbra</option> 
+								</optgroup> 
+								<optgroup label="Leiria"> 
+									<option value="Instituto Politécnico de Leiria - Escola Superior de Tecnologia e Gestão de Leiria">Instituto Politécnico de Leiria - Escola Superior de Tecnologia e Gestão de Leiria</option> 
+									<option value="Instituto Politécnico de Leiria - Escola Superior de Saúde de Leiria">Instituto Politécnico de Leiria - Escola Superior de Saúde de Leiria</option> 
+								</optgroup> 
+								<optgroup label="Lisboa"> 
+									<option value="Escola Superior de Enfermagem de Lisboa">Escola Superior de Enfermagem de Lisboa</option> 
+									<option value="Instituto Politécnico de Lisboa - Instituto Superior de Engenharia de Lisboa">Instituto Politécnico de Lisboa - Instituto Superior de Engenharia de Lisboa</option> 
+								</optgroup> 
+								<optgroup label="Santarém"> 
+									<option value="Instituto Politécnico de Santarém - Escola Superior de Gestão e Tecnologia de Santarém">Instituto Politécnico de Santarém - Escola Superior de Gestão e Tecnologia de Santarém</option> 
+									<option value="Instituto Politécnico de Santarém - Escola Superior de Saúde de Santarém">Instituto Politécnico de Santarém - Escola Superior de Saúde de Santarém</option> 
+								</optgroup> 
+								<optgroup label="Setúbal"> 
+									<option value="Instituto Politécnico de Setúbal - Escola Superior de Ciências Empresariais de Setúbal">Instituto Politécnico de Setúbal - Escola Superior de Ciências Empresariais de Setúbal</option> 
+									<option value="Instituto Politécnico de Setúbal - Escola Superior de Educação de Setúbal">Instituto Politécnico de Setúbal - Escola Superior de Educação de Setúbal</option> 
+								</optgroup> 
+								<optgroup label="Faro"> 
+									<option value="Universidade do Algarve - Escola Superior de Educação e Comunicação">Universidade do Algarve - Escola Superior de Educação e Comunicação</option> 
+									<option value="Universidade do Algarve - Instituto Superior de Engenharia">Universidade do Algarve - Instituto Superior de Engenharia</option> 
+								</optgroup> 
+							</select>
+
+							<!-- Sexo -->
+							<h4>Sexo *</h4>
+							<input type="radio" id="idMasc" name="Sexo" value="Masculino" required>
+							<label for="idMasc">Masculino</label>
+							<br>
+							<input type="radio" id="idFemi" name="Sexo" value="Feminino" required>
+							<label for="idFemi">Feminino</label>
+
+							<br><br>
+
+							<!-- Categoria -->
+							<label for="idCategoria">Categoria *</label><br>
+							<select id="idCategoria" name="Categoria" required>
+								<option value="">Escolha um Tipo</option>
+								<option value="Bodyboard Open">Bodyboard Open</option>
+								<option value="Bodyboard Feminino">Bodyboard Feminino</option>
+								<option value="Surf Open">Surf Open</option>
+								<option value="Surf Feminino">Surf Feminino</option>
+							</select>
+
+							<br><br>
+
+							<!-- Data de Nascimeno -->
+							<label for="idData">Data de Nascimento *</label><br>
+							<input type="date" id="idData" name="Data_Nascimento" min="1950-01-01" max="2005-01-01" required>
+
+							<br><br>
+
+							<!-- Pacotes -->
+							<h4>Pacotes * <label for="toggle-1">(<u>Ver Tabela</u>)</label></h4>
+							<input type="checkbox" id="toggle-1">
+							<!-- <div id="botaopacotes">teste</div> -->
+							<div id="pacotes">
+								<table>
+								    <tr>
+								        <td></td>
+								        <td><strong>Pacote 1</strong></td>
+								        <td><strong>Pacote 2</strong></td>
+								        <td><strong>Pacote 3</strong></td>
+								        <td><strong>Pacote 4</strong></td>
+								    </tr>
+								    <tr>
+								        <td>Inscrição</td>
+								        <td>✔</td>
+								        <td>✔</td>
+								        <td>✔</td>
+								        <td>✔</td>
+								    </tr>
+								    <tr>
+								        <td>Seguro de acidentes pessoais</td>
+								        <td>✔</td>
+								        <td>✔</td>
+								        <td>✔</td>
+								        <td>✔</td>
+								    </tr>
+								    <tr>
+								        <td>Alojamento - 2 noites</td>
+								        <td></td>
+								        <td></td>
+								        <td>✔</td>
+								        <td>✔</td>
+								    </tr>
+								    <tr>
+								        <td>Alimentação - 4 refeições (*)</td>
+								        <td></td>
+								        <td>✔</td>
+								        <td></td>
+								        <td>✔</td>
+								    </tr>
+								    <tr>
+								        <td><strong>Custo</strong></td>
+								        <td><strong>15€</strong></td>
+								        <td><strong>27€</strong></td>
+								        <td><strong>35€</strong></td>
+								        <td><strong>47€</strong></td>
+								    </tr>
+								</table>
+							</div>
+
+							<input type="radio" id="idPack-1" name="Packs" value="Pacote_1" required>
+							<label for="idPack-1">Pacote 1</label>
+							
+							<input style="margin-left: 100px;" type="radio" id="idPack-2" name="Packs" value="Pacote_2" required>
+							<label for="idPack-2">Pacote 2</label>
+
+							<br><br>
+
+							<input type="radio" id="idPack-3" name="Packs" value="Pacote_3" required>
+							<label for="idPack-3">Pacote 3</label>
+							
+							<input style="margin-left: 100px;" type="radio" id="idPack-4" name="Packs" value="Pacote_4" required>
+							<label for="idPack-4">Pacote 4</label>
+
+							<br><br>
+
+							<!-- Contacto -->
+							<label for="idContacto">Contacto *</label><br>
+							<input type="tel" id="idContacto" name="Contacto" size="35" maxlength="9" required>
+
+							<br><br>
+
+							<!-- E-mail -->
+							<label for="idEmail">E-mail *</label><br>
+							<input type="email" id="idEmail" name="Email" placeholder="email.name@mail.com" size="35" required>
+
+							<br><br>
+
+							<!-- Submit -->
+							<input type="submit" value="Inscrever" name="Submit">
+						</form>	
+					</div>
+				</div>
+
+				<div class="divcartaz2">
+
+					<img class="cartaz2" src="../img/cartaz.png" alt="cartaz">
+
+				</div>
+
+			</div>
+		</section>
+
+		<footer>
+
+			<div id="footer">
+
+				<div class="footer-top"></div>
+
+				<div class="footer-center">
+					<div class="footer-main-center container">
+						<div class="footer-left">
+
+							<img class="footer-logo" src="../img/footer/greylogobox.png" alt="footer-logo">
+
+							<ul>
+								<li><img src="../img/footer/local.png" alt="local"><span>Rua D. João Pereira Venâncio</span></li>
+								<li><span>2495-440, Fátima, Portugal</span></li>
+								<li><img src="../img/footer/email.png" alt="email"><span>cubs@gmail.com</span></li>
+								<li><img src="../img/footer/telefone.png" alt="telefone"><span>916515157</span></li>
+								<li><img src="../img/footer/fax.png" alt="fax"><span>253456433</span></li>
+								<li><img src="../img/footer/web.png" alt="web"><span>www.ipleiria.pt</span></li>
+						    </ul>
+
+						</div>
+						<div class="footer-middle">
+							
+							<h3>Sobre Nós</h3>
+
+							<article>
+								<p>A Escola Superior de Turismo e Tecnologia do Mar (ESTM) pertence ao Instituto Politécnico de Leiria. É uma escola recente mas já enraizada na comunidade onde se insere. Esta Instituição Educativa situa-se no litoral Oeste, mais precisamente na Península de Peniche.<p>
+
+								<p>Bodyboard e Surf são duas atividades desportivas que proporcionam uma forma física equilibrada, possibilitam uma estreita relação com a natureza, permitem o contacto com outros praticantes e são muito populares entre a camada estudantil da população.</p>
+
+								<p>A organização do Circuito Universitário de Bodyboard & Surf (CUBS) cabe à Escola Superior de Turismo e Tecnologia do Mar. A selecção do local da prova, depende das condições do mar.</p>
+							</article>
+
+						</div>
+						<div class="footer-right">
+
+							<h3>Menu</h3>
+
+							<nav>
+								<ul>
+									<li><a href="cubs.html"><span>CUBS</span></a></li>
+									<li><a href="provas.html"><span>Provas</span></a></li>
+									<li><a href="classificacoes.html"><span>Classificações</span></a></li>
+									<li><a href="registo.html"><span>Inscrições</span></a></li>
+									<li><a href="organizacao.html"><span>Organização</span></a></li>
+							        <li><a href="apoios.html"><span>Apoios</span></a></li>
+							        <li><a href="contactos.html"><span>Contactos</span></a></li>
+						    	</ul>
+							</nav>
+						</div>
+					</div>
+				</div>
+
+				<div class="footer-bottom">
+					<div class="container">
+						<address>&copy; 2014. Alberto Lalanda & André Almeida. Todos os direitos reservados</address>
+					</div>
+				</div>
+
+			</div>
+
+		</footer>			
+	</body>
+</html>
